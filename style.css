@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    /* Full-screen coder background */
+    background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1352&q=80') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Horizontal Glass Box */
+.main-box {
+    width: 85vw;
+    height: 60vh;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px); /* Blurs the background image */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: white;
+}
+
+/* Top Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Content Area */
+.content {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Project Cards */
+.project-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card {
+    width: 200px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+/* Aligns text and image parallel */
+.main-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left !important; /* Changes text from center to left */
+}
+
+.text-side {
+    flex: 1;
+    padding-left: 20px;
+    color:rgb(0, 2, 100);
+}
+
+.image-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* Styles your picture */
+.profile-pic {
+    width: 250px; /* Adjust size as needed */
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px; /* Makes corners slightly rounded */
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+    background: #3498db;
+    transform: scale(1.05);
+}
+
+/* Contact Form */
+.simple-form input, .simple-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
